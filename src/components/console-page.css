@@ -291,7 +291,8 @@
   /* ---------- footer ---------- */
   .console-page .ft{position:relative;padding-block:clamp(56px,7vw,88px) calc(28px + env(safe-area-inset-bottom,0px));background:linear-gradient(180deg,#120726 0%,#0E061D 40%,var(--bg) 100%)}
   .console-page .ft-top{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,3fr);gap:clamp(32px,5vw,80px);max-width:1240px;margin:0 auto}
-  .console-page .ft-brand .logo{font-size:22px}
+  .console-page .ft-brand .logo{display:inline-flex;align-items:center;width:max-content;max-width:100%;line-height:0}
+  .console-page .ft-brand .logo-img{display:block;width:auto;height:34px;max-width:100%;object-fit:contain;object-position:left center}
   .console-page .ft-brand p{margin:8px 0 0;font-size:14.5px;line-height:1.65;color:var(--ink-2);max-width:34ch}
   .console-page .ft-brand .ft-tag{margin:20px 0 0;font-size:17px;font-weight:600;letter-spacing:-.005em;color:#fff}
   .console-page .ft-soc{display:flex;gap:10px;margin-top:22px;list-style:none;padding:0}

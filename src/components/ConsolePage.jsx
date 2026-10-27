@@ -34,7 +34,7 @@ function RouteLink({ to, className, children, onClick }) {
 }
 const Soon = ({ label = "Launching soon" }) => h("em", { className: "soon" }, label);
 const Logo = () => h("a", { className: "logo", href: "/", "aria-label": "Seek Now home" },
-  h("img", { src: logo, alt: "Seek Now", width: 773, height: 168 }));
+  h("img", { className: "logo-img", src: logo, alt: "Seek Now", width: 773, height: 168 }));
 const DdIcon = ({ children }) => h("span", { className: "dd-ic", "aria-hidden": "true" }, h("svg", { viewBox: "0 0 24 24" }, children));
 
 function ConsoleHeader() {
