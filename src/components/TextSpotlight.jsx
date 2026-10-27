@@ -47,7 +47,7 @@ export default function TextSpotlight({ radius = 350, unit = 'char' }) {
     const isLiveOrHidden = (el) => {
       let n = el;
       while (n && n.getAttribute) {
-        if (n.getAttribute('aria-hidden') === 'true') return true;
+        if (n.hidden || n.getAttribute('aria-hidden') === 'true') return true;
         const live = n.getAttribute('aria-live');
         if (live && live !== 'off') return true;
         const role = n.getAttribute('role');
@@ -60,6 +60,7 @@ export default function TextSpotlight({ radius = 350, unit = 'char' }) {
       const cs = getComputedStyle(el);
       return cs.webkitBackgroundClip === 'text' || cs.backgroundClip === 'text';
     };
+    const isLayoutContainer = (el) => ['flex', 'inline-flex', 'grid', 'inline-grid'].includes(getComputedStyle(el).display);
     const hasActiveBlurAnim = (el) => {
       const check = (e) => {
         if (!e) return false;
@@ -200,7 +201,7 @@ html:not(.ts-on) .ts-ch{
       prune();
       for (const el of doc.querySelectorAll(TARGET)) {
         if (el.hasAttribute('data-tspot')) continue;
-        if (inSkip(el) || isLiveOrHidden(el) || isGradText(el)) { el.setAttribute('data-tspot','skip'); continue; }
+        if (inSkip(el) || isLiveOrHidden(el) || isGradText(el) || isLayoutContainer(el)) { el.setAttribute('data-tspot','skip'); continue; }
         if (hasActiveBlurAnim(el)) continue;
         const leaves = splitEl(el);
         if (leaves.length) {

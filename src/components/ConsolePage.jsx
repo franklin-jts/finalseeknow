@@ -6,7 +6,7 @@
    routing hooks, lifecycle and cleanup (StrictMode-safe). */
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import "./console-page.css";
-import logo from "../assets/seek-now-logo.png";
+import logo from "../assets/seek-now-logo-original.png";
 import Header from "./Header.jsx";
 
 const h = React.createElement;
@@ -34,7 +34,7 @@ function RouteLink({ to, className, children, onClick }) {
 }
 const Soon = ({ label = "Launching soon" }) => h("em", { className: "soon" }, label);
 const Logo = () => h("a", { className: "logo", href: "/", "aria-label": "Seek Now home" },
-  h("img", { src: logo, alt: "Seek Now", width: 136, height: 34 }));
+  h("img", { src: logo, alt: "Seek Now", width: 773, height: 168 }));
 const DdIcon = ({ children }) => h("span", { className: "dd-ic", "aria-hidden": "true" }, h("svg", { viewBox: "0 0 24 24" }, children));
 
 function ConsoleHeader() {

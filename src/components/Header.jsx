@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
-import logo from '../assets/seek-now-logo.png';
+import logo from '../assets/seek-now-logo-original.png';
 
 const PRODUCTS = [
   {
@@ -176,7 +176,7 @@ export default function Header() {
 
               {/* Logo */}
               <a className={`logo nav-logo${isProductPage ? ' product-page-logo' : ''}`} href={homeTop} data-route={isProductPage ? undefined : 'home'} aria-label="Seek Now home">
-                <img className="logo-img" src={logo} alt="Seek Now" width="136" height="34" />
+                <img className="logo-img" src={logo} alt="Seek Now" width="773" height="168" />
               </a>
 
               {/* Desktop nav links */}

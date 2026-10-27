@@ -1,6 +1,6 @@
 import useInit from '../hooks/useInit';
 import init from '../scripts/site-footer.js';
-import logo from '../assets/seek-now-logo.png';
+import logo from '../assets/seek-now-logo-original.png';
 
 export default function Footer() {
   useInit(init);
@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="ft-top">
         <div className="ft-brand">
 
-          <a className="logo" href="#top" aria-label="Seek Now home"> <img className="logo-img" src={logo} alt="Seek Now" width="136" height="34" /></a>
+          <a className="logo" href="#top" aria-label="Seek Now home"> <img className="logo-img" src={logo} alt="Seek Now" width="773" height="168" /></a>
           <p className="ft-tag">Seek Now — The Workforce Operating System</p>
           <p>Technology for discovering talent, managing recruitment and supporting people at work.</p>
           <ul className="ft-soc" id="ft-soc" aria-label="Seek Now on social media" hidden />

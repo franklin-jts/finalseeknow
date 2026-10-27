@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import useInit from '../hooks/useInit';
 import init from '../scripts/s3-why.js';
-import logo from '../assets/seek-now-logo.png';
+import logo from '../assets/seek-now-logo-original.png';
 
 // Space (px) kept between the CTA button and the SEO paragraph
 const KEEP_GAP = 48;
@@ -196,7 +196,7 @@ export default function Why() {
           </div>
           <div className="v-reveal">
             <div className="v-lift">
-              <div className="v-mark" role="img" aria-label="Seek Now"> <img className="logo-img" src={logo} alt="" width="136" height="34" /></div>
+              <div className="v-mark" role="img" aria-label="Seek Now"> <img className="logo-img" src={logo} alt="" width="773" height="168" /></div>
               <h3 className="v-h3" data-v=".72,.8">
                 One Platform.
                 {' '}

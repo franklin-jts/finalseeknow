@@ -1,4 +1,4 @@
-import logo from '../assets/seek-now-logo.png';
+import logo from '../assets/seek-now-logo-original.png';
 
 export default function Hero() {
   return (
