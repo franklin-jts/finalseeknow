@@ -479,7 +479,7 @@ const ScreeningHtml = `<section class="rv wrap" id="resume-screening" aria-label
               <h3 class="rv-hd">Applicants · application order</h3>
               <ul class="rv-cl" id="rv-cl"></ul>
               <div class="rv-scan" id="rv-scan" aria-hidden="true"></div>
-              <p class="rv-ill"><b>Illustrative Match Scores</b>Example rubric, sample resumes</p>
+              <p class="rv-ill"><b>Illustrative Match Scores</b><span>Example rubric, sample resumes</span></p>
               <div class="rv-short" id="rv-short">
                 <h3 class="rv-hd" style="margin-bottom:8px">Shortlist <span id="rv-sn"></span></h3>
                 <ul class="rv-sl" id="rv-sl"></ul>

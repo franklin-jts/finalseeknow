@@ -905,7 +905,8 @@
   .console-page .rv-sc .bar i{display:block;height:100%;width:var(--w,0%);border-radius:99px;background:linear-gradient(90deg,#8660F8,#C9B0FF);transition:width .6s var(--ease)}
   .console-page .rv-scan{position:absolute;top:44px;bottom:8px;left:0;width:90px;pointer-events:none;background:linear-gradient(90deg,transparent,rgba(185,145,255,.22) 40%,rgba(225,210,255,.55) 50%,rgba(185,145,255,.22) 60%,transparent);filter:blur(1px);opacity:0;will-change:transform,opacity}
   .console-page .rv-scan::after{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;background:#E3D6FF;box-shadow:0 0 12px 2px rgba(185,145,255,.9)}
-  .console-page .rv-ill{margin:10px 2px 0;font-size:12px;color:var(--ink-3);display:flex;align-items:center;gap:6px}
+  .console-page .rv-ill{margin:10px 2px 0;font-size:12px;color:var(--ink-3);display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+  .console-page .rv-ill span{min-width:0}
   .console-page .rv-ill b{white-space:nowrap;font:600 10.5px var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:#1A0B2C;background:#E7C77A;padding:2px 7px;border-radius:99px}
 
   .console-page .rv-short{margin-top:16px;padding:12px;border-radius:14px;border:1px dashed rgba(185,145,255,.35);background:rgba(134,96,248,.05);will-change:opacity,transform}

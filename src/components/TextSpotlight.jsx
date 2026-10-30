@@ -213,6 +213,12 @@ html:not(.ts-on) .ts-ch{
       requestAnimationFrame(measureAll);
     };
 
+    const onAnimationEnd = (e) => {
+      if (e.animationName === 'focusIn' || e.animationName === 'lit') {
+        requestAnimationFrame(scan);
+      }
+    };
+
     /* ── Pointer torch ── */
     let cx = -1e9, cy = -1e9, rafId = 0, active = false;
     const R  = radius;
@@ -292,6 +298,7 @@ html:not(.ts-on) .ts-ch{
 
     doc.addEventListener('pointermove', onMove, { passive:true });
     doc.addEventListener('mouseleave',  onLeave);
+    doc.addEventListener('animationend', onAnimationEnd);
     window.addEventListener('scroll',  onScroll, { passive:true });
     window.addEventListener('resize',  onResize);
 
@@ -308,6 +315,7 @@ html:not(.ts-on) .ts-ch{
       io.disconnect(); mo.disconnect();
       doc.removeEventListener('pointermove', onMove);
       doc.removeEventListener('mouseleave',  onLeave);
+      doc.removeEventListener('animationend', onAnimationEnd);
       window.removeEventListener('scroll',   onScroll);
       window.removeEventListener('resize',   onResize);
       root.classList.remove('ts-on');

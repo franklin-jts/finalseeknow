@@ -439,7 +439,7 @@ function SolRecruitment() {
               </ol>
             </div>
             <p className="rw-flow" id="rw-flow" ref={flowRef}>
-              Requirement<i aria-hidden="true">→</i>Screening<i aria-hidden="true">→</i>Interview<i aria-hidden="true">→</i>Selection<i aria-hidden="true">→</i>Onboarding
+              Requirement{' '}<i aria-hidden="true">→</i>{' '}Screening{' '}<i aria-hidden="true">→</i>{' '}Interview{' '}<i aria-hidden="true">→</i>{' '}Selection{' '}<i aria-hidden="true">→</i>{' '}Onboarding
             </p>
           </div>
         </div>

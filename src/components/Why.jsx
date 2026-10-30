@@ -9,7 +9,7 @@ const KEEP_GAP = 48;
 const LIFT_RATIO = 0.05;
 // Font size of the line under the heading ("Discover talent, manage recruitment...")
 // Increase / decrease this to taste.
-const TAGLINE_FONT_SIZE = 'clamp(17px, 1.5vw, 20px)';
+const TAGLINE_FONT_SIZE = 'clamp(18px, 1.5vw, 20px)';
 
 // Layout position of an element (ignores transforms, so it is not affected by the animation)
 const pageTop = (el) => {
@@ -94,9 +94,10 @@ export default function Why() {
           <div className="v-ring" aria-hidden="true" />
           <div className="v-s1">
             <h2 className="v-h2" id="v-title">
-              Managing Your Workforce Shouldn't Require
-              {' '}
-              <span className="v-lav">So Many Tools.</span>
+              <span className="v-h2-line">Managing Your Workforce</span>
+              <span className="v-h2-line">
+                Shouldn't Require <span className="v-lav">So Many Tools.</span>
+              </span>
             </h2>
             <p className="v-sub">Recruitment, employee referrals, attendance, payroll and HR management — scattered across different systems.</p>
           </div>
@@ -223,8 +224,10 @@ export default function Why() {
           transition: 'opacity .6s ease, transform .6s ease',
         }}
       >
-        Seek Now is workforce management software that brings employee referral software, recruitment management, applicant tracking and HRMS capabilities together.<br />
-        Simplify hiring, leave, payroll and attendance management and everyday employee administration through one connected ecosystem.<br />
+        Seek Now is workforce management software that brings employee referral software, recruitment management, applicant tracking and HRMS capabilities together.
+        {' '}
+        Simplify hiring, leave, payroll and attendance management and everyday employee administration through one connected ecosystem.
+        {' '}
         One platform. One workforce operating system.
       </p>
     </section>

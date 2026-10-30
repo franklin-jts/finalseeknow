@@ -18,8 +18,8 @@ export default function Ecosystem() {
             </span>
           </h2>
           <p className="s4-lede">
-            From discovering the right talent and streamlining recruitment to managing employees
-            every day, Seek Now brings essential workforce operations together in one connected ecosystem.
+            <span>From talent discovery and recruitment to managing employees every day,</span>
+            <span>all connected in one workforce ecosystem.</span>
           </p>
         </div>
 
@@ -122,6 +122,19 @@ export default function Ecosystem() {
               <span className="prod"><b>SEEK PEOPLE</b>Manage your people, effortlessly.</span>
             </div>
 
+            {/* Caption 4 — One connected ecosystem */}
+            <div className="cap cap-together" data-cap="4">
+              <span className="eyebrow">04 — One Ecosystem</span>
+              <h3 className="cap-h cap-together-h">
+                <span>Three Powerful Products.</span>
+                <span>One Complete <span className="s4-grad">Workforce Journey.</span></span>
+              </h3>
+              <p className="cap-p cap-together-p">
+                <span>From talent discovery and recruitment to managing employees every day,</span>
+                <span>all connected in one workforce ecosystem.</span>
+              </p>
+            </div>
+
             <div className="hint" id="eco-hint" aria-hidden="true">Scroll to explore<i /></div>
             <p className="fine">Interfaces shown with illustrative sample data</p>
           </div>
@@ -174,10 +187,9 @@ export default function Ecosystem() {
 
         {/* ── SEO paragraph ── */}
         <p className="s4-seo">
-          Seek Now is workforce management software made of three connected products: Refer Now for
-          employee referral software and talent discovery, Console for recruitment management software with
-          an applicant tracking system and recruitment CRM, and Seek People for HRMS software covering
-          attendance, payroll and employee management.
+          <span>Seek Now connects Refer Now for talent discovery with Console for recruitment.</span>
+          {' '}
+          <span>Seek People brings HRMS, attendance, payroll and employee management together.</span>
         </p>
 
       </div>

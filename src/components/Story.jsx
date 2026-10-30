@@ -16,7 +16,8 @@ export default function Story() {
             Three Products.<br />One Workforce Operating System.
           </h2>
           <p className="story-sub">
-            One connected journey, from talent discovery to everyday workforce management.
+            <span>One connected journey, from talent discovery</span>
+            <span>to everyday workforce management.</span>
           </p>
           <a className="btn btn-primary story-cta" href="#why-seek-now">
             Discover Seek Now <span className="arr" aria-hidden="true">→</span>

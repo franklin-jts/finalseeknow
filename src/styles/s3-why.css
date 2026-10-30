@@ -4,9 +4,10 @@
   .v-canvas,.v-glow,.v-ring,.v-funnel-d{display:none}
 
   .v-s1{max-width:980px;margin:0 auto}
-  .v-h2{margin:0 auto;max-width:21ch;font-size:clamp(2.15rem,4.1vw,3.95rem);font-weight:800;line-height:1.04;letter-spacing:-.033em;text-wrap:balance}
+  .v-h2{margin:0 auto;max-width:none;font-size:clamp(2.15rem,4.1vw,3.95rem);font-weight:800;line-height:1.04;letter-spacing:-.033em;text-wrap:balance}
+  .v-h2-line{display:block}
   .v-lav{color:#C9B0FF;text-shadow:0 0 .5em rgba(134,96,248,.35)}
-  .v-sub{margin:20px auto 0;max-width:56ch;font-size:clamp(1.02rem,1.3vw,1.16rem);line-height:1.65;color:var(--ink-2);text-wrap:pretty}
+  .v-sub{margin:20px auto 0;max-width:56ch;font-size:clamp(1.15rem,1.6vw,1.35rem);line-height:1.65;color:var(--ink-2);text-wrap:pretty}
 
   .fl-cloud{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 16px;max-width:880px;margin:44px auto 0;list-style:none;padding:0}
   .fl-logo{display:inline-flex;align-items:center;gap:10px;padding:8px 16px 8px 8px;border-radius:var(--r,14px);background:rgba(22,11,38,.78);border:1px solid color-mix(in srgb,var(--h) 32%,transparent);box-shadow:0 16px 40px -20px rgba(0,0,0,.95),0 0 26px -14px var(--h);white-space:nowrap;text-align:left;will-change:transform,opacity;animation:bob 6s ease-in-out infinite;animation-delay:calc(var(--n) * -.7s)}
@@ -40,7 +41,7 @@
   .v-prods strong{font-size:15px;font-weight:700}
   .v-prods span.d{font-size:14px;color:var(--ink-2)}
   .v-cta{margin-top:30px}
-  .v-seo{max-width:66ch;margin:0 auto;padding-block:clamp(40px,6vw,72px) clamp(64px,8vw,104px);text-align:center;font-size:17px;line-height:1.75;color:var(--ink-3)}
+  .v-seo{max-width:90ch;margin:0 auto;padding-block:clamp(40px,6vw,72px) clamp(64px,8vw,104px);text-align:center;font-size:18px;line-height:1.75;color:var(--ink-3)}
 
   /* ---- Pinned cinematic mode (desktop) ---- */
   .v-pinned .v-track{height:320vh}

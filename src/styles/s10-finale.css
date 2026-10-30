@@ -11,7 +11,7 @@
   .s10-h2 span{display:block;transition:opacity 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1),filter 1s cubic-bezier(.2,.7,.2,1)}
   .s10-h2 span:nth-child(2){transition-delay:.28s}
   .s10-h2 span:nth-child(3){transition-delay:.56s;background:linear-gradient(100deg,#F3ECFF 0%,#C9B0FF 40%,#A780FF 75%,#8660F8 100%);-webkit-background-clip:text;background-clip:text;color:transparent;padding-bottom:.08em}
-  .s10-p{margin:28px auto 0;max-width:52ch;font-size:clamp(1.05rem,1.4vw,1.25rem);line-height:1.6;color:var(--ink-2);transition:opacity .9s var(--ease) 1.05s,transform .9s var(--ease) 1.05s}
+  .s10-p{margin:28px auto 0;max-width:52ch;font-size:clamp(1.2rem,1.7vw,1.5rem);line-height:1.6;color:var(--ink-2);transition:opacity .9s var(--ease) 1.05s,transform .9s var(--ease) 1.05s}
   .s10-ctas{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:38px;transition:opacity .9s var(--ease) 1.25s,transform .9s var(--ease) 1.25s}
   .s10 .btn{height:58px;padding:0 30px;border-radius:18px;font-size:16.5px;transition-duration:.25s}
   .s10 .btn-primary{background:linear-gradient(180deg,#7E59F5,#6440DF);box-shadow:0 14px 36px -14px rgba(134,96,248,.95),inset 0 1px 0 rgba(255,255,255,.22)}

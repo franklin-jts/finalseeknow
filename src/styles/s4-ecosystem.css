@@ -1,10 +1,11 @@
 ﻿  .s4{position:relative;isolation:isolate;overflow-x:clip;padding-block:clamp(56px,7vw,96px) clamp(56px,7vw,96px)}
   .s4::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(55% 40% at 50% 8%,rgba(134,96,248,.12),transparent 70%),radial-gradient(70% 45% at 50% 60%,rgba(134,96,248,.10),transparent 72%)}
-  .s4-intro{text-align:center;max-width:900px;margin:0 auto}
-  .s4-h2{margin:0 0 0;font-size:clamp(2.4rem,5vw,4.8rem);font-weight:800;line-height:1.04;letter-spacing:-.034em;text-wrap:balance}
-  .s4-h2 .l{display:block}
+  .s4-intro{text-align:center;max-width:1200px;margin:0 auto}
+  .s4-h2{margin:0 0 0;font-size:clamp(2rem,4.5vw,4.5rem);font-weight:800;line-height:1.04;letter-spacing:-.034em;text-wrap:balance}
+  .s4-h2 .l{display:block;white-space:nowrap}
   .s4-grad{color:#ffffff}
-  .s4-lede{margin:20px auto 0;max-width:62ch;font-size:clamp(1.12rem,1.5vw,1.28rem);line-height:1.65;color:var(--ink-2);text-wrap:pretty}
+  .s4-lede{margin:20px auto 0;max-width:100ch;font-size:clamp(1.2rem,1.8vw,1.4rem);line-height:1.65;color:var(--ink-2);text-wrap:pretty}
+  .s4-lede span{display:block}
 
   /* tabs */
   .s4-tabsw{display:flex;justify-content:center;margin-top:clamp(32px,4vw,48px)}
@@ -154,7 +155,8 @@
   }
   .s4-strip strong{display:block;font-size:14px;font-weight:700;line-height:1.3;color:#fff}
   .s4-strip p{margin:4px 0 0;font-size:13px;line-height:1.55;color:var(--ink-2)}
-  .s4-seo{max-width:70ch;margin:28px auto 0;text-align:center;font-size:17px;line-height:1.7;color:var(--ink-3)}
+  .s4-seo{max-width:90ch;margin:28px auto 0;text-align:center;font-size:clamp(18px,1.7vw,20px);line-height:1.7;color:var(--ink-3)}
+  .s4-seo span{display:block}
 
   [data-e]{transition:opacity .8s var(--ease),transform .8s var(--ease);transition-delay:calc(var(--i,0) * 110ms)}
   [data-e].pre{opacity:0;transform:translateY(24px)}
@@ -168,6 +170,8 @@
     .s4-strip .btn{justify-self:start}
   }
   @media (max-width:760px){
+    .s4-h2 .l{white-space:normal}
+    .s4-lede span{display:inline}
     .pp{flex-basis:calc(100% - 8px)}
     .pp,.pp.is-active{--sc:1}
     .ptabs{display:flex;width:100%}
@@ -176,6 +180,7 @@
     .s4-strip li{padding:0}
     .s4-strip li + li{border-left:0;border-top:1px solid var(--line);padding-top:16px}
     .s4-strip .btn{width:100%}
+    .s4-seo span{display:inline}
   }
   @media (max-width:420px){.ptab .ti{display:none}}
   @media (prefers-reduced-motion:reduce){
@@ -401,9 +406,36 @@
   min-height: 280px;
 }
 
-/* Cap headings use h3 in eco-story so bump font to match h2 size */
+/* Keep all ecosystem story captions comfortably readable. */
 .eco-story .cap-h {
-  font-size: clamp(1.6rem, 3vw, 2.8rem);
+  font-size: clamp(1.9rem, 3.5vw, 3.15rem);
+}
+.eco-story .cap-p {
+  font-size: clamp(19px, 1.45vw, 21px);
+}
+.eco-story.eco-active .cap-together {
+  top: clamp(28px, 6vh, 64px);
+  left: 50%;
+  z-index: 200;
+  width: min(1200px, 94%);
+  text-align: center;
+  transform: translate(-50%, 0) !important;
+}
+.eco-story.eco-active .cap-together .cap-together-h {
+  margin: 10px 0;
+  font-size: clamp(2rem, 4.5vw, 4.5rem);
+  line-height: 1.04;
+  letter-spacing: -.034em;
+}
+.eco-story.eco-active .cap-together-h > span,
+.eco-story.eco-active .cap-together-p > span {
+  display: block;
+}
+.eco-story.eco-active .cap-together .cap-together-p {
+  max-width: 100ch;
+  margin: 20px auto 0;
+  font-size: clamp(1.2rem, 1.8vw, 1.4rem);
+  line-height: 1.65;
 }
 
 #eco-platform {
@@ -427,4 +459,3 @@
 
 /* Section 4 — orbit SVG hidden (ring removed) */
 .eco-story .orbit { display: none !important; }
-

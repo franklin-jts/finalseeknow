@@ -10,8 +10,7 @@ export default function Roles() {
           <div className="s5-spot" aria-hidden="true" />
           <span className="eyebrow">Built Around Your Business</span>
           <h2 className="s5-h2" id="s5-title">
-            <span className="hl">Different Roles.</span>
-            <span className="hl">Different Challenges.</span>
+            <span className="hl">Different Roles. Different Challenges.</span>
             <span className="hl">One Seek Now.</span>
           </h2>
           <p className="s5-lede">Whether you're growing a company, managing people, hiring talent or managing your workday, Seek Now helps you work smarter.</p>

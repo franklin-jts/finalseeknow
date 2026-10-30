@@ -349,6 +349,12 @@ function initEcoStory() {
       { 'eco-refer': pastA, 'eco-console': focus,  'eco-people': nextA },
       // S[3]: Manage — Seek People in focus
       { 'eco-refer': pastB, 'eco-console': pastA,  'eco-people': focus },
+      // S[4]: One ecosystem — bring all 3 products back together
+      {
+        'eco-refer':   P(-sw * .30, sh * .17, .54,  4, 0),
+        'eco-console': P( 0,        sh * .17, .54,  0, 0),
+        'eco-people':  P( sw * .30, sh * .17, .54, -4, 0),
+      },
     ];
   };
 
@@ -398,15 +404,15 @@ function initEcoStory() {
     const r     = story.getBoundingClientRect();
     const total = story.offsetHeight - innerHeight;
     const p     = clamp(-r.top / total);
-    const T     = p * 4;                        // 4 steps: spread, Discover, Recruit, Manage
-    const i     = Math.min(3, Math.floor(T));   // 0,1,2,3
+    const T     = p * 4;                        // 4 transitions: spread, Discover, Recruit, Manage, together
+    const i     = Math.min(4, Math.floor(T));   // 0,1,2,3,4
     const e     = ease(clamp((T - i - .22) / .56));
     const t     = i + e;
     const cur   = {};
 
     keys.forEach(k => {
       if (!pw[k]) return;
-      const a  = S[i][k], b = S[Math.min(i + 1, 3)][k];
+      const a  = S[i][k], b = S[Math.min(i + 1, 4)][k];
       const v  = {
         x: lerp(a.x, b.x, e), y: lerp(a.y, b.y, e),
         s: lerp(a.s, b.s, e), r: lerp(a.r, b.r, e),
