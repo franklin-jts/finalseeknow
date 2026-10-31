@@ -650,8 +650,8 @@ export default function Capabilities() {
             <span className="arr" aria-hidden="true">→</span>
           </a>
           <p className="s6-seo">
-            <span>Seek People combines attendance, face recognition check-ins, shift scheduling and workforce management.</span>
-            <span>Its HRMS and payroll tools support salary, PF, ESI and Professional Tax compliance.</span>
+            <span>Seek People: attendance, face recognition check-ins and workforce tools.</span>
+            <span>Shift scheduling, HRMS payroll, salary, PF, ESI and tax compliance.</span>
           </p>
         </div>
       </div>

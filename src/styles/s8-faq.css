@@ -66,8 +66,8 @@
   .s8-still .btn{height:48px;padding:0 20px;font-size:15px}
 
   @media (max-width:1024px){
-    .s8-grid{grid-template-columns:1fr}
-    .s8-left{position:relative;top:auto}
+    .s8-grid{grid-template-columns:minmax(0,1fr)}
+    .s8-left{position:relative;top:auto;min-width:0}
     .s8-lede{max-width:60ch}
     .s8-help{max-width:520px}
   }

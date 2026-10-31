@@ -1001,7 +1001,7 @@
   .story-sub {
     margin: 0 auto 34px;
     max-width: 48ch;
-    font-size: clamp(1.2rem, 1.45vw, 1.56rem);
+    font-size: clamp(1.3rem, 1.6vw, 1.68rem);
     line-height: 1.7;
     color: var(--ink-2);
   }

@@ -336,8 +336,8 @@ export default function Pricing() {
             <li>Simple Per-User Pricing</li>
           </ul>
           <p className="s9-seo">
-            <span>Per-user pricing covers Seek Now workforce management, employee referral, recruitment, applicant tracking, and HRMS software.</span>
-            <span>Refer Now, Console, and Seek People are priced per user, per month—you pay only for the apps and users you need.</span>
+            <span>Per-user pricing covers workforce management, employee referral, recruitment and HRMS tools.</span>
+            <span>Refer Now, Console and Seek People are billed monthly per user—only for what you need.</span>
           </p>
         </div>
       </div>
