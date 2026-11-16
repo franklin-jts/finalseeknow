@@ -7,7 +7,7 @@
   .s9-stage{position:relative;padding-block:clamp(80px,10vw,128px) clamp(40px,5vw,64px);text-align:center}
   .s9-tiers,.s9-glow,.s9-parts{display:none}
   .s9-name{font:600 var(--fs-eyebrow) var(--f-mono);letter-spacing:.22em;text-transform:uppercase;color:var(--lav)}
-  .s9-h2{margin:18px auto 0;font-size:64px;font-weight:800;line-height:1.05;letter-spacing:-.03em;white-space:nowrap;word-spacing:0.3em}
+  .s9-h2{margin:18px auto 0;font-size:64px;font-weight:800;line-height:1.05;letter-spacing:-.03em;white-space:normal;word-spacing:0.3em;max-width:42ch}
   .s9-h2 .ln{display:inline;will-change:opacity,transform;margin-right:0.15em}
   .s9-h2 .g{background:linear-gradient(100deg,#8660F8 0%,#A780FF 35%,#D7C3FF 100%);-webkit-background-clip:text;background-clip:text;color:transparent;padding-bottom:.06em}
   .s9-desc{margin:22px auto 0;max-width:1200px;font-size:var(--fs-lead);line-height:1.6;color:var(--ink-2)}
