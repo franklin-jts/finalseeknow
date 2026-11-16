@@ -1,4 +1,4 @@
-  .s5{position:relative;isolation:isolate;overflow-x:clip;padding-block:clamp(72px,9vw,128px) clamp(80px,10vw,136px)}
+  .s5{position:relative;isolation:isolate;overflow-x:clip;padding-block:clamp(72px,9vw,128px) clamp(80px,10vw,136px);min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:center}
   .s5::before{content:"";position:absolute;inset:0;z-index:-2;pointer-events:none;background:linear-gradient(180deg,var(--bg) 0%,#110722 45%,var(--bg) 100%)}
   .s5-intro{position:relative;text-align:center;max-width:1200px;margin:0 auto}
   .s5-spot{position:absolute;left:50%;top:48%;width:min(900px,120vw);aspect-ratio:1.8;transform:translate(-50%,-50%);z-index:-1;pointer-events:none;background:radial-gradient(closest-side,rgba(134,96,248,.32),rgba(134,96,248,.08) 55%,transparent);transition:opacity 1.6s var(--ease) .3s,transform 1.6s var(--ease) .3s}

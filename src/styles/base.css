@@ -259,7 +259,7 @@
   @keyframes breathe{50%{opacity:.78}}
 
   /* ---------- Hero ---------- */
-  .hero{position:relative;isolation:isolate;text-align:center;padding-top:calc(72px + env(safe-area-inset-top,0px) + clamp(44px,8vh,92px));padding-bottom:clamp(20px,3vh,36px)}
+  .hero{position:relative;isolation:isolate;text-align:center;padding-top:calc(72px + env(safe-area-inset-top,0px) + clamp(44px,8vh,92px));padding-bottom:clamp(20px,3vh,36px);min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:center;box-sizing:border-box}
 
   /* Hero logo — sits where badge was, animates to nav on scroll */
   .hero-logo-wrap{
@@ -1011,11 +1011,15 @@
 
   /* Section wrapper */
   .story-static {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
     padding-top: clamp(32px, 4vw, 56px);
     padding-bottom: clamp(16px, 2vw, 32px);
     overflow: hidden;
+    min-height: 100vh;
+    min-height: 100svh;
   }
 
   /* Ambient background glow */

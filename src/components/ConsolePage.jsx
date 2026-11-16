@@ -1244,7 +1244,7 @@ function initScreening(env) {
       if (p >= .9 && !nudged && !short.length && !reduce) { nudged = true; const b = $('rv-add'); if (b) b.classList.add('nudge'); }
     }
 
-    const track = $('rv-track'), mqW = matchMedia('(min-width: 1100px) and (min-height: 700px)');
+    const track = $('rv-track'), mqW = matchMedia('(min-width: 1100px) and (min-height: 560px)');
     let pin = false, tick = false, io = null;
     function onScroll() {
       tick = false; if (!pin) return;
