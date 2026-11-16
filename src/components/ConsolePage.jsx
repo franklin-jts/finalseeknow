@@ -799,14 +799,14 @@ function initWorkspaces(env) {
     const onScroll = () => { if (!raf) raf = requestAnimationFrame(render); };
 
     function setMode() {
-      const want = (mqStatic.matches || innerHeight < 540) ? 'static' : 'pin';
+      const want = (mqStatic.matches || innerHeight < 400) ? 'static' : 'pin';
       if (want === 'static') { mode = 'static'; enterStatic(); return; }
       mode = 'pin';
       sec.classList.remove('cs-static', 'cs-anim'); sec.classList.add('cs-pin');
       layout();
     }
     let rt = 0;
-    addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(() => { if (mode === 'static' && !(mqStatic.matches || innerHeight < 540)) setMode(); else if (mode === 'pin' && (mqStatic.matches || innerHeight < 540)) setMode(); else if (mode === 'pin') layout(); else sizePreviews(); }, 140); });
+    addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(() => { if (mode === 'static' && !(mqStatic.matches || innerHeight < 400)) setMode(); else if (mode === 'pin' && (mqStatic.matches || innerHeight < 400)) setMode(); else if (mode === 'pin') layout(); else sizePreviews(); }, 140); });
     mqStatic.addEventListener?.('change', setMode);
     addEventListener('scroll', onScroll, { passive: true });
     setMode();

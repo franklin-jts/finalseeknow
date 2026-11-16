@@ -16,8 +16,7 @@ export default function Trust() {
           <div className="s7-intro s7-fade" data-f="">
             <span className="eyebrow">The Trust Behind Seek Now</span>
             <h2 className="s7-h2" id="s7-title">
-              <span>Built on Trust.</span>
-              <span className="soft">Driven by People.</span>
+              <span>Built on Trust.</span> <span className="soft">Driven by People.</span>
             </h2>
             <p className="s7-lede">Workforce technology is about more than software. It's about the people, teams and organisations that depend on reliable recruitment and employee operations.</p>
           </div>

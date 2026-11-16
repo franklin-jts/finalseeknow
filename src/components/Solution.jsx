@@ -168,7 +168,17 @@ function SolHero() {
             <span className="ln ln2"><span className="wd" data-t="Your Workforce Solution Should Be Too.">Your Workforce Solution Should Be Too.</span></span>
           </span>
         </h1>
-        <p className="cx-sub2" style={{ maxWidth: '62ch', fontSize: 'clamp(1.02rem,1.35vw,1.2rem)', marginTop: 'clamp(22px,3.2vh,32px)' }}>
+        <p className="cx-sub2" style={{ 
+          width: '100%',
+          maxWidth: '1100px',
+          margin: 'clamp(22px, 3.2vh, 32px) auto 0',
+          padding: '0 20px',
+          fontSize: '20px',
+          lineHeight: '1.6',
+          color: 'var(--ink-2)',
+          textAlign: 'center',
+          textWrap: 'balance'
+        }}>
           From finding talent and managing recruitment to simplifying HR operations and shift-based workforce management, explore solutions designed around the way your business works.
         </p>
         <div className="cx-ctas">
@@ -327,9 +337,9 @@ function SolTalentDiscovery() {
           <div className="tn-grid">
             <div className="tn-copy">
               <span className="sv-num">Solution 01 / Talent Discovery</span>
-              <h2 id="tn-title">Great Opportunities Start With <em>Great Connections.</em></h2>
+              <h2 id="tn-title">Great Opportunities Start With <br /><em>Great Connections.</em></h2>
               <p>Discover the potential of referral-driven hiring, where job opportunities can reach talent through professional and employee networks.</p>
-              <h3>The challenges it addresses</h3>
+              <p className="eyebrow">The challenges it addresses</p>
               <ul className="sv-pts" id="tn-pts" ref={ptsRef}>
                 <li>Discovering relevant candidates</li>
                 <li>Expanding recruitment reach</li>

@@ -349,7 +349,7 @@ function ReferralCanvas({ paused, reducedMotion, onToggle }) {
           <b>Refer Now</b><em>Launching soon</em>
         </p>
         <span className="eyebrow rn-eyebrow">Something New Is Coming</span>
-        <h1 className="rn-title" id="rn-title"><span>Great Talent.</span><span>Great Connections.</span><span>Coming Soon.</span></h1>
+        <h1 className="rn-title" id="rn-title"><span>Great Talent. Great Connections.</span><span>Coming Soon.</span></h1>
         <p className="rn-subtitle">Introducing Refer Now — a new way to discover opportunities, connect talent and make referrals count.</p>
         <div className="rn-actions">
           <a className="btn btn-primary" href="#early-access">Get Early Access <span className="arr" aria-hidden="true">→</span></a>

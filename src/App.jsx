@@ -15,7 +15,6 @@ import Faq from './components/Faq.jsx';
 import Pricing from './components/Pricing.jsx';
 import Finale from './components/Finale.jsx';
 import Footer from './components/Footer.jsx';
-import TextSpotlight from './components/TextSpotlight.jsx';
 import ConsolePage from './components/ConsolePage.jsx';
 import ReferNowPage from './components/ReferNowPage.jsx';
 import SolutionPage from './components/Solution.jsx';
@@ -46,9 +45,6 @@ function HomePage() {
 
   return (
     <>
-      {/* Text-only spotlight — purple at 100% inside, white at 85% outside */}
-      <TextSpotlight radius={250} unit="char" />
-
       {/* Cinematic intro — removed from DOM once complete */}
       {showIntro && <IntroScreen onComplete={handleIntroDone} />}
  
