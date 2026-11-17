@@ -57,7 +57,7 @@
 @keyframes focusIn{from{opacity:0;transform:translateY(.32em);filter:blur(12px)}to{opacity:1;transform:none;filter:blur(0)}}
 @keyframes lit{0%{text-shadow:0 0 0 rgba(134,96,248,0)}35%{text-shadow:0 0 .45em rgba(134,96,248,.9)}100%{text-shadow:0 0 .4em rgba(134,96,248,.32)}}
 @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
-.console-page .sub{max-width:1280px;margin:26px auto 0;padding-inline:max(clamp(24px,4vw,48px),env(safe-area-inset-left,0px)) max(clamp(24px,4vw,48px),env(safe-area-inset-right,0px));font-size:clamp(1.04rem,1.35vw,1.22rem);line-height:1.62;color:var(--ink-2);text-wrap:pretty;animation:rise .8s var(--ease) 1.45s both}
+.console-page .sub{max-width:1280px;margin:26px auto 0;padding-inline:max(clamp(24px,4vw,48px),env(safe-area-inset-left,0px)) max(clamp(24px,4vw,48px),env(safe-area-inset-right,0px));font-size:20px;line-height:1.62;color:var(--ink-2);text-wrap:pretty;animation:rise .8s var(--ease) 1.45s both}
 .console-page .ctas{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:36px;animation:rise .8s var(--ease) 1.6s both}
 .console-page .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:54px;padding:0 26px;border-radius:999px;font:600 16px/1 var(--f-display);text-decoration:none;cursor:pointer;transition:transform .35s var(--ease),box-shadow .35s var(--ease),background .35s,border-color .35s}
 .console-page .btn .arr{display:inline-block;transition:transform .35s var(--ease)}
@@ -343,14 +343,14 @@
 .console-page .cx-eb{display:inline-flex;align-items:center;gap:10px;margin:0;padding:8px 16px;border-radius:999px;background:rgba(134,96,248,.12);border:1px solid rgba(185,145,255,.3);font:600 12px var(--f-mono);letter-spacing:.2em;text-transform:uppercase;color:var(--ink-2);animation:cxUp .7s var(--ease) .1s both}
 .console-page .cx-eb::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--lav);box-shadow:0 0 10px var(--lav)}
 
-.console-page h1.cx-h1{margin:clamp(20px,3vh,30px) 0 0;font-size:clamp(2.75rem,min(11.5vw,8.5vw + 1rem),5rem);font-weight:800;line-height:.98;letter-spacing:-.045em}
+.console-page h1.cx-h1{margin:clamp(20px,3vh,30px) 0 0;font-size:80px !important;font-weight:800;line-height:.98;letter-spacing:-.045em}
 .console-page .cx-h1 .vis{display:block;position:static;aspect-ratio:auto;container-type:normal;perspective:none;perspective-origin:50% 50%}
 .console-page .cx-h1 .ln{display:block;overflow:hidden;padding:0 .04em .08em;margin-bottom:-.08em}
 .console-page .cx-h1 .ln1 .ch{display:inline-block;animation:cxRise .85s cubic-bezier(.2,.75,.15,1) both;animation-delay:calc(.32s + var(--i) * 24ms)}
 .console-page .cx-h1 .ln2 .wd{position:relative;display:inline-block;background:linear-gradient(100deg,#FFFFFF 0%,#EFE6FF 28%,#C9B0FF 62%,#9E80FA 100%);-webkit-background-clip:text;background-clip:text;color:transparent;animation:cxRise .95s cubic-bezier(.2,.75,.15,1) .72s both}
 .console-page .cx-h1 .ln2 .wd::after{content:attr(data-t);position:absolute;inset:0;background:linear-gradient(100deg,transparent 38%,rgba(255,255,255,.95) 48%,rgba(236,226,255,.9) 52%,transparent 62%) no-repeat;background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;opacity:0;animation:cxSweep 1.15s cubic-bezier(.45,0,.2,1) 1.35s both;pointer-events:none}
 
-.console-page .cx-lc{position:relative;display:grid;justify-items:center;margin-top:clamp(18px,2.6vh,28px);min-height:1.6em;font-size:clamp(1rem,1.6vw,1.25rem);font-weight:500;letter-spacing:.01em;color:var(--lav)}
+.console-page .cx-lc{position:relative;display:grid;justify-items:center;margin-top:clamp(18px,2.6vh,28px);min-height:1.6em;font-size:20px;font-weight:500;letter-spacing:.01em;color:var(--lav)}
 .console-page .cx-lc > span{grid-area:1/1;display:inline-flex;align-items:center;gap:.6em;white-space:nowrap;transition:opacity .55s var(--ease),transform .65s cubic-bezier(.2,.75,.2,1)}
 .console-page .cx-lc .ph{opacity:0;transform:translateY(.7em)}
 .console-page .cx-lc .ph::before{content:"";width:.4em;height:.4em;border-radius:50%;background:var(--lav);box-shadow:0 0 .6em var(--lav)}
@@ -382,7 +382,7 @@
   .console-page .cx{padding-top:calc(72px + env(safe-area-inset-top,0px) + 32px)}
   .console-page .cx-ctas{width:100%;flex-direction:column}
   .console-page .cx-ctas .btn{width:100%}
-  .console-page .cx-lc{font-size:1rem}
+  .console-page .cx-lc{font-size:20px}
   .console-page .cx-caps .lead{flex-basis:100%}
 }
 @media (prefers-reduced-motion:reduce){
@@ -398,7 +398,7 @@
   .console-page .cs-h2{margin:18px 0 0;font-size:clamp(2.2rem,5vw,4.5rem);font-weight:800;line-height:1.03;letter-spacing:-.04em;text-align:center;display:flex;flex-direction:column;align-items:center}
   .console-page .cs-h2 span{display:block;white-space:nowrap}
   .console-page .cs-h2 em{font-style:normal;background:linear-gradient(100deg,#F3ECFF 0%,#C9B0FF 45%,#9E80FA 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
-  .console-page .cs-lede{margin:20px auto 0;max-width:none;font-size:clamp(1.02rem,1.3vw,1.15rem);line-height:1.65;color:var(--ink-2);text-align:center;white-space:nowrap}
+  .console-page .cs-lede{margin:20px auto 0;max-width:none;font-size:20px;line-height:1.65;color:var(--ink-2);text-align:center;white-space:nowrap}
   .console-page .cs-track{position:relative}
   .console-page .cs-stage{position:relative;max-width:1180px;margin:0 auto;padding:clamp(56px,7vw,96px) var(--gutter,20px) clamp(72px,9vw,120px)}
   .console-page .cs-glow{display:none}
@@ -416,7 +416,7 @@
   .console-page .cs-close-t span{display:block;white-space:nowrap}
   .console-page .cs-close-t span:first-child{display:inline}
   .console-page .cs-close-t span + span{background:linear-gradient(100deg,#F3ECFF 0%,#C9B0FF 45%,#9E80FA 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
-  .console-page .cs-close p:last-child{margin:16px auto 0;max-width:none;font-size:clamp(1rem,1.3vw,1.12rem);line-height:1.6;color:var(--ink-2);white-space:nowrap}
+  .console-page .cs-close p:last-child{margin:16px auto 0;max-width:none;font-size:20px;line-height:1.6;color:var(--ink-2);white-space:nowrap}
   .console-page .cs-seo{max-width:70ch;margin:30px auto 0;text-align:center;font-size:14.5px;line-height:1.7;color:var(--ink-3)}
 
   /* feature fragment card */
@@ -583,7 +583,7 @@
   .console-page .dd-h2 .ln{display:block;overflow:hidden;padding-bottom:.08em;margin-bottom:-.08em}
   .console-page .dd-h2 .ln > span{display:block;transition:transform 1s cubic-bezier(.2,.75,.15,1)}
   .console-page .dd-h2 .ln + .ln > span{transition-delay:.12s;background:linear-gradient(100deg,#F3ECFF 0%,#C9B0FF 45%,#9E80FA 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
-  .console-page .dd-lede{margin:20px auto 0;max-width:62ch;font-size:clamp(1.02rem,1.3vw,1.15rem);line-height:1.65;color:var(--ink-2);transition:opacity .9s var(--ease) .3s,transform .9s var(--ease) .3s}
+  .console-page .dd-lede{margin:20px auto 0;max-width:62ch;font-size:20px;line-height:1.65;color:var(--ink-2);transition:opacity .9s var(--ease) .3s,transform .9s var(--ease) .3s}
   .console-page .dd-labels{display:flex;justify-content:center;align-items:center;gap:14px;margin:18px 0 0;font:600 12px var(--f-mono);letter-spacing:.2em;color:var(--lav)}
   .console-page .dd-labels i{width:28px;height:1px;background:linear-gradient(90deg,transparent,var(--lav),transparent)}
   .console-page .adx.wait .dd-h2 .ln > span{transform:translateY(105%)}
@@ -772,13 +772,13 @@
   .console-page .dd-desc li::before{content:"";flex:none;width:7px;height:7px;margin-top:8px;border-radius:50%;background:var(--lav);box-shadow:0 0 8px var(--lav)}
   .console-page .dd-tagline{margin:clamp(28px,3vw,40px) 0 0;text-align:center;font-size:clamp(1.3rem,2.2vw,1.8rem);font-weight:700;letter-spacing:-.02em;transition:opacity .8s var(--ease),transform .8s var(--ease)}
   .console-page .dd-tagline em{font-style:normal;background:linear-gradient(100deg,#F3ECFF,#C9B0FF 50%,#9E80FA);-webkit-background-clip:text;background-clip:text;color:transparent}
-  .console-page .dd-demo{margin:14px auto 0;max-width:72ch;text-align:center;font-size:12.5px;color:var(--ink-3)}
-  .console-page .dd-demo button{margin-left:8px;min-height:32px;padding:0 12px;border-radius:99px;border:1px solid var(--line-2);background:none;color:var(--ink-2);font:500 12.5px var(--f-display);cursor:pointer}
+  .console-page .dd-demo{margin:14px auto 0;max-width:72ch;text-align:center;font-size:20px;color:var(--ink-3)}
+  .console-page .dd-demo button{margin-left:8px;min-height:32px;padding:0 12px;border-radius:99px;border:1px solid var(--line-2);background:none;color:var(--ink-2);font:500 20px var(--f-display);cursor:pointer}
   .console-page .dd-demo button:hover{color:#fff;border-color:rgba(185,145,255,.6)}
   .console-page .dd-end{max-width:760px;margin:clamp(64px,8vw,104px) auto 0;text-align:center}
   .console-page .dd-end h3{margin:0;font-size:clamp(1.8rem,3.4vw,3rem);font-weight:800;line-height:1.06;letter-spacing:-.032em;text-wrap:balance}
   .console-page .dd-end p{margin:16px auto 26px;max-width:56ch;font-size:16.5px;line-height:1.65;color:var(--ink-2)}
-  .console-page .dd-seo{max-width:70ch;margin:24px auto 0;text-align:center;font-size:14.5px;line-height:1.7;color:var(--ink-3)}
+  .console-page .dd-seo{max-width:70ch;margin:24px auto 0;text-align:center;font-size:20px;line-height:1.7;color:var(--ink-3)}
   .console-page .dd-live{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 
   @media (max-width:1079px){
@@ -832,7 +832,7 @@
   .console-page .rv-h2{margin:18px 0 0;font-size:clamp(2.3rem,5vw,4.6rem);font-weight:800;line-height:1.02;letter-spacing:-.04em}
   .console-page .rv-h2 span{display:block}
   .console-page .rv-h2 em{font-style:normal;background:linear-gradient(100deg,#F3ECFF 0%,#C9B0FF 45%,#9E80FA 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
-  .console-page .rv-lede{margin:20px auto 0;max-width:60ch;font-size:clamp(1.02rem,1.3vw,1.15rem);line-height:1.65;color:var(--ink-2)}
+  .console-page .rv-lede{margin:20px auto 0;max-width:60ch;font-size:20px;line-height:1.65;color:var(--ink-2)}
   .console-page .rv-tags{list-style:none;margin:20px 0 0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
   .console-page .rv-tags li{padding:6px 14px;border-radius:999px;border:1px solid rgba(185,145,255,.32);font:600 11.5px var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);background:rgba(26,11,44,.4)}
 
@@ -961,7 +961,7 @@
   .console-page .rv-end{max-width:100%;margin:0 auto;padding-block:clamp(64px,8vw,104px) clamp(88px,11vw,140px);padding-inline:max(clamp(24px,4vw,48px),env(safe-area-inset-left,0px)) max(clamp(24px,4vw,48px),env(safe-area-inset-right,0px));text-align:center}
   .console-page .rv-end h3{margin:0;font-size:clamp(1.9rem,3.6vw,3.1rem);font-weight:800;line-height:1.06;letter-spacing:-.032em;white-space:nowrap;display:inline-block}
   .console-page .rv-end h3 em{font-style:normal;background:linear-gradient(100deg,#F3ECFF,#C9B0FF 50%,#9E80FA);-webkit-background-clip:text;background-clip:text;color:transparent}
-  .console-page .rv-end p{margin:16px auto 0;max-width:85ch;font-size:16px;line-height:1.65;color:var(--ink-2);display:block}
+  .console-page .rv-end p{margin:16px auto 0;max-width:85ch;font-size:20px;line-height:1.65;color:var(--ink-2);display:block}
   .console-page .rv-end p.s{font-size:14.5px;color:var(--ink-3);display:block;max-width:62ch;margin-left:auto;margin-right:auto}
 
   /* pinned split (desktop) */
@@ -1306,7 +1306,7 @@
 }
 .console-page .dd-seo{
   max-width:1000px;
-  font-size:14px;
+  font-size:20px;
   text-wrap:balance;
 }
 
@@ -1381,18 +1381,18 @@
   
   /* === HERO SECTION === */
   .console-page h1.cx-h1 {
-    font-size: clamp(2.3rem, 7.5vw, 4rem);
+    font-size: 80px !important;
     margin-top: clamp(16px, 2.5vh, 24px);
   }
   
   .console-page .cx-sub {
     margin-top: clamp(18px, 2.2vh, 24px);
-    font-size: clamp(0.95rem, 1.5vw, 1.15rem);
+    font-size: 20px;
   }
   
   .console-page .cx-sub2 {
     margin-top: clamp(16px, 2vh, 22px);
-    font-size: clamp(0.95rem, 1.4vw, 1.08rem);
+    font-size: 20px;
   }
   
   .console-page .cx-ctas {
@@ -1520,7 +1520,7 @@
   }
   
   .console-page .rv-end p {
-    font-size: 15.5px;
+    font-size: 20px;
     max-width: 80ch;
   }
   
@@ -1666,7 +1666,7 @@
   
   /* Extra compact spacing */
   .console-page h1.cx-h1 {
-    font-size: clamp(2.2rem, 7vw, 3.8rem);
+    font-size: 80px !important;
     margin-top: 14px;
   }
   

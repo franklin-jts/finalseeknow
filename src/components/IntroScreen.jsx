@@ -1,16 +1,5 @@
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 
-/* ============================================================================
-   IntroScreen.jsx — single, self-contained file (only dependency: React)
-
-   Cinematic Seek Now logo reveal, ported from Seeknow_Logo_Reveal.html.
-   Usage:   <IntroScreen />                  // wide shot, ~9s
-            <IntroScreen variant="full" />   // + macro close-up, ~16s
-   Place it first inside your App so it covers the page.
-
-   UPDATE: the purple light glow (light rays, lens bloom, horizontal streak,
-   purple tint and hot spot at the top of the logo) has been removed.
-   ========================================================================== */
 
 // ---- 773x168 white logo (the reveal geometry is tied to this exact image) ----
 // >>> PASTE YOUR EXISTING `const logo = "data:image/png;base64,..."` LINE HERE <<<

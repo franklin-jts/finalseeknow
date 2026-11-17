@@ -41,7 +41,7 @@
   .v-prods strong{font-size:var(--fs-small);font-weight:700}
   .v-prods span.d{font-size:var(--fs-fine);color:var(--ink-2)}
   .v-cta{margin-top:30px}
-  .v-seo{max-width:90ch;margin:0 auto;padding-block:clamp(40px,6vw,72px) clamp(64px,8vw,104px);text-align:center;font-size:18px;line-height:1.75;color:var(--ink-3)}
+  .v-seo{max-width:90ch;margin:0 auto;padding-block:clamp(40px,6vw,72px) clamp(64px,8vw,104px);text-align:center;font-size:20px;line-height:1.75;color:var(--ink-3)}
 
   /* ---- Pinned cinematic mode (desktop) ---- */
   .v-pinned .v-track{height:320vh}

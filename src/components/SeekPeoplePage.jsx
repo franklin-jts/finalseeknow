@@ -4288,7 +4288,7 @@ function Hero() {
             </span>
           </span>
         </h1>
-        <p className="cx-sub2" style={{ maxWidth: '60ch', fontSize: 'clamp(1.02rem,1.35vw,1.2rem)', marginTop: 'clamp(22px,3.2vh,32px)' }}>
+        <p className="cx-sub2" style={{ maxWidth: '60ch', fontSize: '20px', marginTop: '16px' }}>
           From attendance and payroll to everyday employee experiences, Seek People brings your workforce operations together in one
           powerful HRMS platform.
         </p>

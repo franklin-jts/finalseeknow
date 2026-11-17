@@ -3,17 +3,18 @@ import logo from '../assets/seek-now-logo-original.png';
 
 const PRODUCTS = [
   {
-    id: 'refer',
+    id: 'people',
     icon: (
       <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
-        <circle cx="9" cy="6" r="3" stroke="currentColor" strokeWidth="1.6"/>
-        <path d="M3 15c0-3.314 2.686-5 6-5s6 1.686 6 5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"/>
-        <path d="M13 4l1.5 1.5L13 7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <circle cx="7" cy="6" r="2.5" stroke="currentColor" strokeWidth="1.6"/>
+        <path d="M2 15c0-2.761 2.239-4.5 5-4.5s5 1.739 5 4.5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"/>
+        <circle cx="13" cy="6" r="2" stroke="currentColor" strokeWidth="1.5"/>
+        <path d="M15.5 14.5c0-2-1.12-3.5-2.5-3.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
       </svg>
     ),
-    name: 'Refer Now',
-    badge: 'LAUNCHING SOON',
-    desc: 'Employee referrals & talent discovery',
+    name: 'Seek People',
+    badge: null,
+    desc: 'HRMS & employee management',
     href: '#ecosystem',
   },
   {
@@ -32,18 +33,17 @@ const PRODUCTS = [
     active: true,
   },
   {
-    id: 'people',
+    id: 'refer',
     icon: (
       <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
-        <circle cx="7" cy="6" r="2.5" stroke="currentColor" strokeWidth="1.6"/>
-        <path d="M2 15c0-2.761 2.239-4.5 5-4.5s5 1.739 5 4.5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"/>
-        <circle cx="13" cy="6" r="2" stroke="currentColor" strokeWidth="1.5"/>
-        <path d="M15.5 14.5c0-2-1.12-3.5-2.5-3.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+        <circle cx="9" cy="6" r="3" stroke="currentColor" strokeWidth="1.6"/>
+        <path d="M3 15c0-3.314 2.686-5 6-5s6 1.686 6 5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"/>
+        <path d="M13 4l1.5 1.5L13 7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     ),
-    name: 'Seek People',
-    badge: null,
-    desc: 'HRMS & employee management',
+    name: 'Refer Now',
+    badge: 'LAUNCHING SOON',
+    desc: 'Employee referrals & talent discovery',
     href: '#ecosystem',
   },
 ];
@@ -85,10 +85,13 @@ export default function Header() {
   const isSolution = path === '/solution';
   const isSeekPeople = path === '/seek-people';
   const isProductPage = isConsole || isReferNow || isSolution || isSeekPeople;
-  const platformHref = isProductPage ? '/#top' : '#top';
+  const platformHref = isProductPage ? '/' : '#top';
   const homeTop = isProductPage ? '/' : '#top';
   const handlePlatformClick = isProductPage
-    ? () => window.sessionStorage.setItem('seek-now-skip-intro-once', 'true')
+    ? () => {
+        window.sessionStorage.setItem('seek-now-skip-intro-once', 'true');
+        setTimeout(() => window.scrollTo(0, 0), 100);
+      }
     : undefined;
   const products = PRODUCTS.map((product) => ({
     ...product,

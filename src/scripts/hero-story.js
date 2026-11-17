@@ -2,7 +2,7 @@ export default function init() {
   /* ---- Config ---- */
   const CONFIG = {
     badge: "India's First Workforce Operating System",
-    routes: { home:'#top', platform:'#platform', products:'#platform', solutions:'#', resources:'#', company:'#', demo:'#', explore:'#platform', discover:'#top' }
+    routes: { home:'#platform', platform:'#top', products:'#platform', solutions:'#', resources:'#', company:'#', demo:'#', explore:'#platform', discover:'#top' }
   };
   document.querySelectorAll('[data-route]').forEach(a => { const r = CONFIG.routes[a.dataset.route]; if (r) a.setAttribute('href', r); });
   document.querySelectorAll('[data-badge]').forEach(el => { el.textContent = CONFIG.badge; });

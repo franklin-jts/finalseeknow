@@ -58,7 +58,7 @@ export default function Capabilities() {
             </div>
             <div className="s6-vis">
               {/* Scene 1: attendance phone */}
-              <div className="c6-scene c6-phs" data-s="0" style={{ "--r": "2" }}>
+              <div className="c6-scene c6-phs" data-s="0" style={{ "--r": "2", "--k": "1" }}>
                 <span className="c6-simtag">Simulation · sample data</span>
                 <div className="c6-loc" aria-hidden="true">
                   <span className="pin">
@@ -154,7 +154,7 @@ export default function Capabilities() {
                 </div>
               </div>
               {/* Scene 2: payslip */}
-              <div className="c6-scene c6-pss" data-s="1" style={{ "--r": "4" }}>
+              <div className="c6-scene c6-pss" data-s="1" style={{ "--r": "4", "--k": "1" }}>
                 <div className="ps-wrap">
                   <span className="ps-simtag">Sample payslip · illustrative figures</span>
                   {' '}
@@ -255,7 +255,7 @@ export default function Capabilities() {
                 </div>
               </div>
               {/* Scene 3: scheduler */}
-              <div className="c6-scene c6-scs" data-s="2" style={{ "--r": "6" }}>
+              <div className="c6-scene c6-scs" data-s="2" style={{ "--r": "6", "--k": "1" }}>
                 <div className="sch-wrap">
                   <span className="c6-done" aria-hidden="true">
                     <i />
