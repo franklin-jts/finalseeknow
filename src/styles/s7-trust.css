@@ -19,7 +19,7 @@
   .s7-rel-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,64px);align-items:end;max-width:1180px;margin:0 auto}
   .s7-rel-head h3{margin:14px 0 0;font-size:var(--fs-h3);font-weight:700;line-height:1.1;letter-spacing:-.02em;text-wrap:balance}
   .s7-rel-head p{margin:0;font-size:var(--fs-lead);line-height:1.6;color:var(--ink-2);max-width:48ch}
-  .s7-mq{position:relative;margin-top:12px;overflow:hidden;-webkit-mask:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+  .s7-mq{position:relative;margin-top:8px;overflow:hidden;-webkit-mask:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
   .s7-mq-track{display:flex;width:max-content;gap:20px;padding-block:8px;animation:mq 70s linear infinite}
   .s7-mq:hover .s7-mq-track,.s7-mq:focus-within .s7-mq-track{animation-play-state:paused}
   @keyframes mq{to{transform:translateX(-50%)}}
@@ -68,7 +68,7 @@
   .s7-tst.dim .s7-ctrl{opacity:0}
 
   /* part 3 · facts */
-  .s7-facts{margin:clamp(80px,10vw,128px) auto 0;max-width:1180px}
+  .s7-facts{margin:clamp(24px,3vw,32px) auto 0;max-width:1180px}
   .s7-facts-dev{display:flex;justify-content:center;margin-bottom:22px}
   .s7-fl{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
   .s7-f{padding:clamp(28px,3.5vw,44px) clamp(18px,2vw,28px);display:flex;flex-direction:column;gap:10px}
