@@ -45,7 +45,7 @@
 .console-page .badge .dot{position:relative;width:7px;height:7px;border-radius:50%;background:var(--lav);box-shadow:0 0 10px var(--lav)}
 .console-page .badge .dot::after{content:"";position:absolute;inset:-4px;border-radius:50%;border:1px solid var(--lav);opacity:0;animation:ping 3.2s ease-out 1.6s infinite}
 @keyframes ping{0%{transform:scale(.5);opacity:.8}70%,100%{transform:scale(1.8);opacity:0}}
-.console-page h1{margin:26px auto 0;font-weight:800;font-size:clamp(2.45rem,6.05vw,5.85rem);line-height:1;letter-spacing:-.08em;text-wrap:balance}
+.console-page h1{margin:26px auto 0;font-weight:800;font-size:clamp(2.45rem,6.05vw,5.85rem);line-height:1;letter-spacing:-.035em;text-wrap:balance}
 .console-page h1 .l{display:block}
 .console-page h1 .l2{margin-top:.04em}
 .console-page h1 .w{display:inline-block;color:#D2BDFF;animation:focusIn .75s var(--ease) both,lit 1.7s ease-out both}
@@ -57,7 +57,7 @@
 @keyframes focusIn{from{opacity:0;transform:translateY(.32em);filter:blur(12px)}to{opacity:1;transform:none;filter:blur(0)}}
 @keyframes lit{0%{text-shadow:0 0 0 rgba(134,96,248,0)}35%{text-shadow:0 0 .45em rgba(134,96,248,.9)}100%{text-shadow:0 0 .4em rgba(134,96,248,.32)}}
 @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
-.console-page .sub{max-width:1280px;margin:26px auto 0;padding-inline:max(clamp(24px,4vw,48px),env(safe-area-inset-left,0px)) max(clamp(24px,4vw,48px),env(safe-area-inset-right,0px));font-size:20px;line-height:1.62;color:var(--ink-2);text-wrap:pretty;animation:rise .8s var(--ease) 1.45s both}
+.console-page .sub{max-width:1200px;margin:26px auto 0;padding-inline:max(clamp(24px,4vw,48px),env(safe-area-inset-left,0px)) max(clamp(24px,4vw,48px),env(safe-area-inset-right,0px));font-size:20px;line-height:1.62;color:var(--ink-2);animation:rise .8s var(--ease) 1.45s both}
 .console-page .ctas{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:36px;animation:rise .8s var(--ease) 1.6s both}
 .console-page .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:54px;padding:0 26px;border-radius:999px;font:600 16px/1 var(--f-display);text-decoration:none;cursor:pointer;transition:transform .35s var(--ease),box-shadow .35s var(--ease),background .35s,border-color .35s}
 .console-page .btn .arr{display:inline-block;transition:transform .35s var(--ease)}
@@ -343,7 +343,7 @@
 .console-page .cx-eb{display:inline-flex;align-items:center;gap:10px;margin:0;padding:8px 16px;border-radius:999px;background:rgba(134,96,248,.12);border:1px solid rgba(185,145,255,.3);font:600 12px var(--f-mono);letter-spacing:.2em;text-transform:uppercase;color:var(--ink-2);animation:cxUp .7s var(--ease) .1s both}
 .console-page .cx-eb::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--lav);box-shadow:0 0 10px var(--lav)}
 
-.console-page h1.cx-h1{margin:clamp(20px,3vh,30px) 0 0;font-size:80px !important;font-weight:800;line-height:.98;letter-spacing:-.08em}
+.console-page h1.cx-h1{margin:clamp(20px,3vh,30px) 0 0;font-size:80px !important;font-weight:800;line-height:.98;letter-spacing:-.035em}
 .console-page .cx-h1 .vis{display:block;position:static;aspect-ratio:auto;container-type:normal;perspective:none;perspective-origin:50% 50%}
 .console-page .cx-h1 .ln{display:block;overflow:hidden;padding:0 .04em .08em;margin-bottom:-.08em}
 .console-page h1.cx-h1 .ln1 span.cxch,
@@ -968,7 +968,7 @@
   .console-page .rv-end h3{margin:0;font-size:clamp(1.9rem,3.6vw,3.1rem);font-weight:800;line-height:1.06;letter-spacing:-.032em;white-space:nowrap;display:inline-block}
   .console-page .rv-end h3 em{font-style:normal;background:linear-gradient(100deg,#F3ECFF,#C9B0FF 50%,#9E80FA);-webkit-background-clip:text;background-clip:text;color:transparent}
   .console-page .rv-end p{margin:16px auto 0;max-width:85ch;font-size:20px;line-height:1.65;color:var(--ink-2);display:block}
-  .console-page .rv-end p.s{font-size:14.5px;color:var(--ink-3);display:block;max-width:62ch;margin-left:auto;margin-right:auto}
+  .console-page .rv-end p.s{font-size:20px !important;color:var(--ink-3);display:block;max-width:62ch;margin-left:auto;margin-right:auto}
 
   /* pinned split (desktop) */
   .console-page .rv-pin .rv-track{height:240vh}
@@ -1152,7 +1152,7 @@
   .console-page .so-end{max-width:780px;margin:clamp(72px,9vw,112px) auto 0;text-align:center}
   .console-page .so-end h3{margin:0;font-size:clamp(1.9rem,3.6vw,3.1rem);font-weight:800;line-height:1.06;letter-spacing:-.032em;text-wrap:balance}
   .console-page .so-end h3 em{font-style:normal;background:linear-gradient(100deg,#F3ECFF,#C9B0FF 50%,#9E80FA);-webkit-background-clip:text;background-clip:text;color:transparent}
-  .console-page .so-end p{margin:16px auto 26px;max-width:58ch;font-size:16.5px;line-height:1.65;color:var(--ink-2)}
+  .console-page .so-end p{margin:16px auto 26px;max-width:58ch;font-size:20px;line-height:1.65;color:var(--ink-2);white-space:nowrap}
   .console-page .so-seo{max-width:70ch;margin:26px auto 0;text-align:center;font-size:20px;line-height:1.7;color:var(--ink-3)}
 
   @media (max-width:1100px){
@@ -1366,7 +1366,7 @@
 /* Resume screening: small closing paragraph on two lines */
 .console-page .rv-end p.s{
   max-width:90ch;
-  font-size:14.5px;
+  font-size:20px !important;
   line-height:1.65;
   text-wrap:balance;
 }
@@ -1387,7 +1387,7 @@
   
   /* === HERO SECTION === */
   .console-page h1.cx-h1 {
-    font-size: 68px !important;
+    font-size: 80px !important;
     margin-top: clamp(16px, 2.5vh, 24px);
   }
   
@@ -1672,8 +1672,8 @@
   
   /* Extra compact spacing */
   .console-page h1.cx-h1 {
-    font-size: 68px !important;
-    margin-top: 14px;
+    font-size: 80px !important;
+    margin-top: clamp(14px, 2vh, 20px);
   }
   
   .console-page .cx-sub {

@@ -381,7 +381,7 @@
   .au-k b{font-weight:600;color:#fff}
   .au-k i{font-style:normal;padding:3px 10px;border-radius:99px;border:1px solid rgba(185,145,255,.35);color:var(--ink-2);letter-spacing:.14em}
   .au-it h3{margin:14px 0 0;font-size:var(--fs-h3);font-weight:800;line-height:1.02;letter-spacing:-.04em;text-wrap:balance}
-  .au-it p.d{margin:16px 0 0;max-width:50ch;font-size:var(--fs-body-lg);line-height:1.65;color:var(--ink-2)}
+  .au-it p.d{margin:16px 0 0;max-width:50ch;font-size:20px;line-height:1.65;color:var(--ink-2)}
   .au-n{display:none;position:absolute;top:clamp(26px,3.5vw,44px);font-size:clamp(5rem,12vw,10rem);font-weight:800;line-height:1;letter-spacing:-.06em;color:transparent;-webkit-text-stroke:1px rgba(185,145,255,.22);pointer-events:none;user-select:none}
   /* 01 HR — left-aligned, word stack */
   .au-hr{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);align-items:center}

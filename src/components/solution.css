@@ -306,7 +306,7 @@ html,body{margin:0}
 /* 04 Recruitment */
   .rw{padding-bottom:clamp(40px,6vw,80px)}
   .rw .sv-head .sv-acts{justify-content:center;margin-top:26px}
-  .rw-scn{margin:14px auto 0;max-width:62ch;font-size:15px;line-height:1.6;color:var(--ink-3)}
+  .rw-scn{margin:14px auto 0;max-width:62ch;font-size:20px;line-height:1.6;color:var(--ink-3)}
   .rw-stagew{width:100%;max-width:1280px;margin:0 auto;padding-inline:max(clamp(24px,4vw,48px),env(safe-area-inset-left,0px)) max(clamp(24px,4vw,48px),env(safe-area-inset-right,0px))}
   .rw-board{position:relative;list-style:none;margin:28px 0 0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:18px}
   .rw-col{position:relative;display:grid;align-content:start;gap:10px}

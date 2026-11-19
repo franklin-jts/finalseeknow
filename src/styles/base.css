@@ -319,7 +319,7 @@
   @keyframes focusIn{from{opacity:0;transform:translateY(.32em);filter:blur(12px)}to{opacity:1;transform:none;filter:blur(0)}}
   @keyframes lit{0%{text-shadow:0 0 0 rgba(134,96,248,0)}35%{text-shadow:0 0 .45em rgba(134,96,248,.9)}100%{text-shadow:0 0 .4em rgba(134,96,248,.32)}}
   @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
-  .sub{max-width:1280px;margin:26px auto 0;padding-inline:max(clamp(24px,4vw,48px),env(safe-area-inset-left,0px)) max(clamp(24px,4vw,48px),env(safe-area-inset-right,0px));font-size:var(--fs-lead);line-height:1.6;color:var(--ink-2);text-wrap:pretty;animation:rise .8s var(--ease) 1.45s both}
+  .sub{max-width:1200px;margin:26px auto 0;padding-inline:max(clamp(24px,4vw,48px),env(safe-area-inset-left,0px)) max(clamp(24px,4vw,48px),env(safe-area-inset-right,0px));font-size:var(--fs-lead);line-height:1.6;color:var(--ink-2);animation:rise .8s var(--ease) 1.45s both}
   .ctas{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:36px;animation:rise .8s var(--ease) 1.6s both}
   .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:54px;padding:0 26px;border-radius:999px;font:600 var(--fs-btn)/1 var(--f-display);text-decoration:none;cursor:pointer;transition:transform .35s var(--ease),box-shadow .35s var(--ease),background .35s,border-color .35s}
   .btn .arr{display:inline-block;transition:transform .35s var(--ease)}
