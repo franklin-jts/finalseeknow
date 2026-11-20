@@ -1207,6 +1207,39 @@
     background: rgba(255,255,255,.06);
   }
 
+  /* CTA button group container */
+  .nav-cta-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: 16px;
+  }
+
+  /* Login button - secondary style */
+  .btn-nav-login {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(255,255,255,.85);
+    text-decoration: none;
+    border: 1px solid rgba(255,255,255,.15);
+    background: transparent;
+    transition: background .25s, border-color .25s, color .25s, transform .2s;
+    white-space: nowrap;
+  }
+  .btn-nav-login:hover {
+    background: rgba(255,255,255,.08);
+    border-color: rgba(255,255,255,.25);
+    color: #fff;
+    transform: translateY(-1px);
+  }
+
   /* Book a Demo CTA button */
   .btn-nav-demo {
     display: inline-flex;
@@ -1241,13 +1274,17 @@
   @media (min-width: 860px) {
     .burger       { display: none; }
     .nav-links    { display: flex; }
+    .nav-cta-group { display: flex; }
     .btn-nav-demo { display: inline-flex; }
+    .btn-nav-login { display: inline-flex; }
   }
 
   /* Hide nav links + CTA on mobile, show hamburger */
   @media (max-width: 859px) {
     .nav-links    { display: none; }
+    .nav-cta-group { display: none; }
     .btn-nav-demo { display: none; }
+    .btn-nav-login { display: none; }
     .burger       { display: grid; }
   }
 

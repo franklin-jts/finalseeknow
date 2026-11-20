@@ -5,7 +5,7 @@
   .s7-h2{margin:18px 0 0;font-size:var(--fs-h2);font-weight:800;line-height:1.05;letter-spacing:-.03em;white-space:nowrap}
   .s7-h2 span{display:inline}
   .s7-h2 span:not(.soft){color:#6B5985;font-weight:800}
-
+ 
   .s7-h2 .soft{font-weight:300;letter-spacing:-.03em;background:linear-gradient(100deg,#F1E9FF 0%,#C9B0FF 45%,#9E80FA 100%);-webkit-background-clip:text;background-clip:text;color:transparent;padding-bottom:.06em}
   .s7-lede{margin:22px auto 0;max-width:1200px;font-size:var(--fs-lead);line-height:1.6;color:var(--ink-2)}
   .s7-fade{transition:opacity 1s var(--ease),transform 1s var(--ease)}

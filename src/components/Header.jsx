@@ -218,10 +218,15 @@ export default function Header() {
               </ul>
 
               {/* Desktop CTA */}
-              <a className="btn btn-nav-demo" href={isConsole ? '#console-demo' : (isReferNow || isSolution) ? '/#site-footer' : '#'} data-route={isProductPage ? undefined : 'demo'}>
-                Book a Demo
-                <span className="arr" aria-hidden="true">↗</span>
-              </a>
+              <div className="nav-cta-group">
+                <a className="btn btn-nav-login" href="https://os.seeknow.in/" target="_blank" rel="noopener noreferrer">
+                  Login
+                </a>
+                <a className="btn btn-nav-demo" href={isConsole ? '#console-demo' : (isReferNow || isSolution) ? '/#site-footer' : '#'} data-route={isProductPage ? undefined : 'demo'}>
+                  Book a Demo
+                  <span className="arr" aria-hidden="true">↗</span>
+                </a>
+              </div>
 
               {/* Mobile hamburger toggle */}
               <button
@@ -315,7 +320,7 @@ export default function Header() {
         <div className="m-panel-foot wrap">
           <div className="inner">
             <div className="m-foot-bar">
-              <a className="m-login" href={isProductPage ? '/#site-footer' : '#'} data-route={isProductPage ? undefined : 'login'}>Log in</a>
+              <a className="m-login" href="https://os.seeknow.in/" target="_blank" rel="noopener noreferrer">Log in</a>
               <a className="m-book-demo" href={isConsole ? '#console-demo' : (isReferNow || isSolution) ? '/#site-footer' : '#'} data-route={isProductPage ? undefined : 'demo'}>Book a Demo ↗</a>
             </div>
           </div>
